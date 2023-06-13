@@ -1,0 +1,411 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700&display=swap");
+.App {
+  font-family: "Nunito Sans", sans-serif;
+}
+body {
+  background-color: black;
+  overflow-x: hidden;
+}
+
+.flex-box {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.templatecontent {
+  flex-basis: 33%;
+  flex-grow: 1;
+  background-position: center;
+  background-size: cover;
+}
+
+.text-block {
+  line-height: 1.6;
+}
+.link {
+  text-color: #ffff;
+}
+.gray-text {
+  text-color: #e5e7eb;
+}
+
+.tag {
+  background-color: #e27a19;
+  text-color: black !important;
+  font-weight: bold;
+  padding: 4px;
+  transform: skew(8deg);
+}
+
+.imageCard {
+  width: 100%;
+  height: auto;
+}
+
+.parallelogram {
+  padding: 2px;
+  position: relative;
+  z-index: 0;
+  margin: 15px;
+}
+
+.parallelogram:before,
+.parallelogram:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  clip-path: polygon(0 11%, 100% 0, 90% 88%, 3% 96%);
+  transition: 1s all;
+  background: black;
+}
+.parallelogram:before {
+  background: #fff;
+  transform: scale(1.05, 1.08);
+}
+
+.parallelogram:hover:before,
+.parallelogram:hover:after {
+  clip-path: polygon(5% 2%, 100% 5%, 100% 100%, 0% 94%);
+}
+
+.parallelogram1 {
+  padding: 2px;
+  position: relative;
+  z-index: 0;
+  margin: 24px;
+}
+
+.parallelogram1:before,
+.parallelogram1:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  clip-path: polygon(0% 0%, 97% 8%, 100% 88%, 3% 92%);
+  transition: 1s all;
+  background: #000;
+}
+.parallelogram1:before {
+  background: #ffff;
+  transform: scale(1.05, 1.08);
+}
+
+.parallelogram1:hover:before,
+.parallelogram1:hover:after {
+  clip-path: polygon(2% 1%, 100% 5%, 100% 100%, 0% 94%);
+}
+
+.parallelogram2 {
+  padding: 2px;
+  position: relative;
+  z-index: 0;
+  margin: 24px;
+}
+
+.parallelogram2:before,
+.parallelogram2:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  clip-path: polygon(3% 0%, 97% 2%, 100% 88%, 3% 92%);
+  transition: 1s all;
+  background: #000;
+}
+.parallelogram2:before {
+  background: #ffff;
+  transform: scale(1.05, 1.08);
+}
+
+.parallelogram2:hover:before,
+.parallelogram2:hover:after {
+  clip-path: polygon(5% 2%, 100% 5%, 100% 100%, 0% 94%);
+}
+
+.parallelogram3 {
+  padding: 2px;
+  position: relative;
+  z-index: 0;
+  margin: 24px;
+}
+
+.parallelogram3:before,
+.parallelogram3:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  clip-path: polygon(0% 0%, 100% 8%, 92% 97%, 3% 92%);
+  transition: 1s all;
+  background: #000;
+}
+.parallelogram3:before {
+  background: #ffff;
+  transform: scale(1.05, 1.08);
+}
+
+.parallelogram3:hover:before,
+.parallelogram3:hover:after {
+  clip-path: polygon(2% 4%, 100% 8%, 100% 100%, 0% 94%);
+}
+
+.parallelogram4 {
+  padding: 2px;
+  position: relative;
+  z-index: 0;
+  margin: 24px;
+}
+
+.parallelogram4:before,
+.parallelogram4:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  clip-path: polygon(4% 5%, 97% 2%, 100% 88%, 3% 92%);
+  transition: 1s all;
+  background: #000;
+}
+.parallelogram4:before {
+  background: #ffff;
+  transform: scale(1.05, 1.08);
+}
+
+.parallelogram4:hover:before,
+.parallelogram4:hover:after {
+  clip-path: polygon(5% 2%, 100% 5%, 100% 100%, 0% 94%);
+}
+
+.parallelogram5 {
+  padding: 2px;
+  position: relative;
+  z-index: 0;
+  margin: 24px;
+}
+
+.parallelogram5:before,
+.parallelogram5:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  clip-path: polygon(8% 2%, 97% 2%, 100% 100%, 3% 92%);
+  transition: 1s all;
+  background: #000;
+}
+.parallelogram5:before {
+  background: #ffff;
+  transform: scale(1.05, 1.08);
+}
+
+.parallelogram5:hover:before,
+.parallelogram5:hover:after {
+  clip-path: polygon(5% 2%, 100% 5%, 100% 100%, 0% 94%);
+}
+
+.parallelogram6 {
+  padding: 64px;
+  color: white;
+  border: none;
+  background: none;
+  outline: none;
+  position: relative;
+  z-index: 0;
+  margin: 15px;
+}
+
+.parallelogram6:before,
+.parallelogram6:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  clip-path: polygon(3% 0%, 97% 2%, 100% 88%, 3% 92%);
+  transition: 1s all;
+  background: #000;
+}
+.parallelogram6:before {
+  background: #e27a19;
+  transform: scale(1.05, 1.08);
+}
+
+.parallelogram6:hover:before,
+.parallelogram6:hover:after {
+  clip-path: polygon(5% 2%, 100% 5%, 100% 100%, 0% 94%);
+}
+
+.parallelogramCard {
+  padding: 32px;
+  position: relative;
+  z-index: 0;
+  margin: 32px;
+}
+
+.parallelogramCard:before,
+.parallelogramCard:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  clip-path: polygon(2% 0%, 100% 3%, 98% 92%, 4% 94%);
+  transition: 1s all;
+  background: #000;
+}
+.parallelogramCard:before {
+  background: #ffff;
+  transform: scale(1.03, 1.02);
+}
+
+.halftone7 {
+  background: black;
+  height: auto;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+  margin-top: -32px;
+  padding-top: 2rem;
+  padding-bottom: 12rem;
+  z-index: 1;
+}
+.halftone7::before {
+  z-index: -1;
+  position: relative;
+  content: "";
+  width: 64em;
+  height: 64rem;
+  bottom: 0;
+  left: 0;
+  transform-origin: center center;
+  transform: rotate(-45deg);
+  margin-left: -32rem;
+  margin-bottom: -32rem;
+  background-image: linear-gradient(0deg, #ffff, #ffff),
+    radial-gradient(circle, #ffff 96.875%, rgba(0, 0, 0, 0) 0),
+    radial-gradient(circle, #ffff 93.75%, rgba(0, 0, 0, 0) 0),
+    radial-gradient(circle, #ffff 90.625%, rgba(0, 0, 0, 0) 0),
+    radial-gradient(circle, #ffff 87.5%, rgba(0, 0, 0, 0) 0),
+    radial-gradient(circle, #ffff 84.375%, rgba(0, 0, 0, 0) 0),
+    radial-gradient(circle, #ffff 81.25%, rgba(0, 0, 0, 0) 0),
+    radial-gradient(circle, #ffff 78.125%, rgba(0, 0, 0, 0) 0),
+    radial-gradient(circle, #ffff 75%, rgba(0, 0, 0, 0) 0),
+    radial-gradient(circle, #ffff 71.875%, rgba(0, 0, 0, 0) 0),
+    radial-gradient(circle, #ffff 68.75%, rgba(0, 0, 0, 0) 0),
+    radial-gradient(circle, #ffff 65.625%, rgba(0, 0, 0, 0) 0),
+    radial-gradient(circle, #ffff 62.5%, rgba(0, 0, 0, 0) 0),
+    radial-gradient(circle, #ffff 59.375%, rgba(0, 0, 0, 0) 0),
+    radial-gradient(circle, #ffff 56.25%, rgba(0, 0, 0, 0) 0),
+    radial-gradient(circle, #ffff 53.125%, rgba(0, 0, 0, 0) 0),
+    radial-gradient(circle, #ffff 50%, rgba(0, 0, 0, 0) 0),
+    radial-gradient(circle, #ffff 46.875%, rgba(0, 0, 0, 0) 0),
+    radial-gradient(circle, #ffff 43.75%, rgba(0, 0, 0, 0) 0),
+    radial-gradient(circle, #ffff 40.625%, rgba(0, 0, 0, 0) 0),
+    radial-gradient(circle, #ffff 37.5%, rgba(0, 0, 0, 0) 0),
+    radial-gradient(circle, #ffff 34.375%, rgba(0, 0, 0, 0) 0),
+    radial-gradient(circle, #ffff 31.25%, rgba(0, 0, 0, 0) 0),
+    radial-gradient(circle, #ffff 28.125%, rgba(0, 0, 0, 0) 0),
+    radial-gradient(circle, #ffff 25%, rgba(0, 0, 0, 0) 0),
+    radial-gradient(circle, #ffff 21.875%, rgba(0, 0, 0, 0) 0),
+    radial-gradient(circle, #ffff 18.75%, rgba(0, 0, 0, 0) 0),
+    radial-gradient(circle, #ffff 15.625%, rgba(0, 0, 0, 0) 0),
+    radial-gradient(circle, #ffff 12.5%, rgba(0, 0, 0, 0) 0),
+    radial-gradient(circle, #ffff 9.375%, rgba(0, 0, 0, 0) 0),
+    radial-gradient(circle, #ffff 6.25%, rgba(0, 0, 0, 0) 0),
+    radial-gradient(circle, #ffff 3.125%, rgba(0, 0, 0, 0) 0),
+    radial-gradient(circle, #ffff 0%, rgba(0, 0, 0, 0) 0);
+  background-repeat: repeat-y;
+  background-size: 512px 16px, 16px 16px, 16px 16px, 16px 16px, 16px 16px,
+    16px 16px, 16px 16px, 16px 16px, 16px 16px, 16px 16px, 16px 16px, 16px 16px,
+    16px 16px, 16px 16px, 16px 16px, 16px 16px, 16px 16px, 16px 16px, 16px 16px,
+    16px 16px, 16px 16px, 16px 16px, 16px 16px, 16px 16px, 16px 16px, 16px 16px,
+    16px 16px, 16px 16px, 16px 16px, 16px 16px, 16px 16px, 16px 16px, 16px 16px;
+  background-position: 0 0, 512px 0, 528px 0, 544px 0, 560px 0, 576px 0, 592px 0,
+    608px 0, 624px 0, 640px 0, 656px 0, 672px 0, 688px 0, 704px 0, 720px 0,
+    736px 0, 752px 0, 768px 0, 784px 0, 800px 0, 816px 0, 832px 0, 848px 0,
+    864px 0, 880px 0, 896px 0, 912px 0, 928px 0, 944px 0, 960px 0, 976px 0,
+    992px 0, 1008px 0;
+  filter: blur(0.5px);
+}
+.halftone7::after {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  width: 64em;
+  height: 64rem;
+  top: 0;
+  right: 0;
+  transform-origin: center center;
+  transform: rotate(-45deg);
+  margin-right: -32rem;
+  margin-top: -32rem;
+  background-image: linear-gradient(0deg, #ffff, #ffff),
+    radial-gradient(circle, #ffff 96.875%, rgba(0, 0, 0, 0) 0),
+    radial-gradient(circle, #ffff 93.75%, rgba(0, 0, 0, 0) 0),
+    radial-gradient(circle, #ffff 90.625%, rgba(0, 0, 0, 0) 0),
+    radial-gradient(circle, #ffff 87.5%, rgba(0, 0, 0, 0) 0),
+    radial-gradient(circle, #ffff 84.375%, rgba(0, 0, 0, 0) 0),
+    radial-gradient(circle, #ffff 81.25%, rgba(0, 0, 0, 0) 0),
+    radial-gradient(circle, #ffff 78.125%, rgba(0, 0, 0, 0) 0),
+    radial-gradient(circle, #ffff 75%, rgba(0, 0, 0, 0) 0),
+    radial-gradient(circle, #ffff 71.875%, rgba(0, 0, 0, 0) 0),
+    radial-gradient(circle, #ffff 68.75%, rgba(0, 0, 0, 0) 0),
+    radial-gradient(circle, #ffff 65.625%, rgba(0, 0, 0, 0) 0),
+    radial-gradient(circle, #ffff 62.5%, rgba(0, 0, 0, 0) 0),
+    radial-gradient(circle, #ffff 59.375%, rgba(0, 0, 0, 0) 0),
+    radial-gradient(circle, #ffff 56.25%, rgba(0, 0, 0, 0) 0),
+    radial-gradient(circle, #ffff 53.125%, rgba(0, 0, 0, 0) 0),
+    radial-gradient(circle, #ffff 50%, rgba(0, 0, 0, 0) 0),
+    radial-gradient(circle, #ffff 46.875%, rgba(0, 0, 0, 0) 0),
+    radial-gradient(circle, #ffff 43.75%, rgba(0, 0, 0, 0) 0),
+    radial-gradient(circle, #ffff 40.625%, rgba(0, 0, 0, 0) 0),
+    radial-gradient(circle, #ffff 37.5%, rgba(0, 0, 0, 0) 0),
+    radial-gradient(circle, #ffff 34.375%, rgba(0, 0, 0, 0) 0),
+    radial-gradient(circle, #ffff 31.25%, rgba(0, 0, 0, 0) 0),
+    radial-gradient(circle, #ffff 28.125%, rgba(0, 0, 0, 0) 0),
+    radial-gradient(circle, #ffff 25%, rgba(0, 0, 0, 0) 0),
+    radial-gradient(circle, #ffff 21.875%, rgba(0, 0, 0, 0) 0),
+    radial-gradient(circle, #ffff 18.75%, rgba(0, 0, 0, 0) 0),
+    radial-gradient(circle, #ffff 15.625%, rgba(0, 0, 0, 0) 0),
+    radial-gradient(circle, #ffff 12.5%, rgba(0, 0, 0, 0) 0),
+    radial-gradient(circle, #ffff 9.375%, rgba(0, 0, 0, 0) 0),
+    radial-gradient(circle, #ffff 6.25%, rgba(0, 0, 0, 0) 0),
+    radial-gradient(circle, #ffff 3.125%, rgba(0, 0, 0, 0) 0),
+    radial-gradient(circle, #ffff 0%, rgba(0, 0, 0, 0) 0);
+  background-repeat: repeat-y;
+  background-size: 512px 16px, 16px 16px, 16px 16px, 16px 16px, 16px 16px,
+    16px 16px, 16px 16px, 16px 16px, 16px 16px, 16px 16px, 16px 16px, 16px 16px,
+    16px 16px, 16px 16px, 16px 16px, 16px 16px, 16px 16px, 16px 16px, 16px 16px,
+    16px 16px, 16px 16px, 16px 16px, 16px 16px, 16px 16px, 16px 16px, 16px 16px,
+    16px 16px, 16px 16px, 16px 16px, 16px 16px, 16px 16px, 16px 16px, 16px 16px;
+  background-position: 512px 0, 496px 0, 480px 0, 464px 0, 448px 0, 432px 0,
+    416px 0, 400px 0, 384px 0, 368px 0, 352px 0, 336px 0, 320px 0, 304px 0,
+    288px 0, 272px 0, 256px 0, 240px 0, 224px 0, 208px 0, 192px 0, 176px 0,
+    160px 0, 144px 0, 128px 0, 112px 0, 96px 0, 80px 0, 64px 0, 48px 0, 32px 0,
+    16px 0, 0px 0;
+  filter: blur(0.5px);
+}
